@@ -50,83 +50,83 @@ const FontLoader = () => (
 ========================================================= */
 const DICT = {
   hi: {
-    appName: "ताज़ा बाज़ार", tagline: "आज की ताज़ी सब्ज़ी और फल, घर बैठे मंगवाएं",
-    searchProducts: "सामान खोजें...", allCategories: "सभी", addToCart: "कार्ट में डालें",
-    outOfStock: "स्टॉक ख़त्म", cart: "टोकरी", emptyCart: "टोकरी अभी खाली है",
-    total: "कुल", checkout: "ऑर्डर करें", back: "वापस", deliveryDetails: "डिलीवरी की जानकारी",
-    fullName: "पूरा नाम", phone: "मोबाइल नंबर", address: "डिलीवरी का पता",
-    useLocation: "मेरी मौजूदा लोकेशन इस्तेमाल करें", locating: "लोकेशन ढूंढी जा रही है...",
-    deliverySlot: "डिलीवरी का समय", morning: "सुबह (7–10 AM)", afternoon: "दोपहर (12–3 PM)",
-    evening: "शाम (5–8 PM)", coupon: "कूपन कोड", applyCoupon: "लागू करें", couponApplied: "कूपन लागू हुआ",
-    invalidCoupon: "अमान्य कूपन कोड", discount: "छूट", paymentMethod: "भुगतान का तरीका",
-    cod: "नकद (डिलीवरी पर)", upi: "UPI", online: "ऑनलाइन भुगतान", payToUpi: "इस UPI ID पर भुगतान करें",
-    placeOrder: "ऑर्डर पक्का करें", placing: "भेजा जा रहा है...", orderPlaced: "ऑर्डर मिल गया!",
-    orderNumber: "ऑर्डर नंबर", willCall: "हम जल्द ही आपको फ़ोन करेंगे", ok: "ठीक है",
-    vendorLogin: "दुकानदार लॉगिन / रजिस्टर (वैकल्पिक)", adminLogin: "प्लेटफ़ॉर्म एडमिन",
-    login: "लॉगिन करें", register: "रजिस्टर करें", logout: "लॉगआउट", password: "पासवर्ड",
-    shopName: "दुकान का नाम", ownerName: "मालिक का नाम", shopAddress: "दुकान का पता",
-    logoUrl: "लोगो की लिंक (URL)", upiId: "आपकी UPI ID", pendingApproval: "आपकी दुकान अभी एडमिन की मंज़ूरी का इंतज़ार कर रही है",
-    suspended: "फ़िलहाल निलंबित है", dashboard: "डैशबोर्ड", products: "सामान",
-    orders: "ऑर्डर", sales: "बिक्री", profile: "प्रोफाइल", addProduct: "नया सामान जोड़ें",
-    productName: "नाम", category: "श्रेणी (जैसे: फल, सब्ज़ी)", price: "कीमत (₹)", unit: "इकाई",
-    imageUrl: "फ़ोटो की लिंक (URL)", videoUrl: "वीडियो की लिंक (URL) — वैकल्पिक",
-    stockIn: "स्टॉक में", stockOut: "स्टॉक ख़त्म", save: "सेव करें", cancel: "रद्द करें",
-    noProducts: "अभी कोई सामान नहीं जोड़ा गया", noOrders: "अभी तक कोई ऑर्डर नहीं आया",
-    totalSales: "कुल बिक्री", totalOrders: "कुल ऑर्डर", commissionRate: "कमीशन दर",
-    commissionPaid: "प्लेटफ़ॉर्म कमीशन", netEarning: "आपकी कमाई", viewOnMap: "मैप में देखें",
-    vendors: "दुकानदार (भविष्य के लिए)", allOrders: "सभी ऑर्डर", settings: "सेटिंग्स", approve: "मंज़ूर करें",
-    suspend: "निलंबित करें", activate: "सक्रिय करें", status: "स्थिति", pending: "मंज़ूरी बाकी",
-    active: "सक्रिय", commissionPct: "कमीशन %", platformRevenue: "प्लेटफ़ॉर्म की कुल कमाई",
-    defaultCommission: "डिफ़ॉल्ट कमीशन %", coupons: "कूपन", addCoupon: "नया कूपन जोड़ें",
-    code: "कोड", type: "प्रकार", value: "वैल्यू", percent: "प्रतिशत (%)", flat: "फ्लैट (₹)",
-    remove: "हटाएं", refresh: "ताज़ा करें", wrongPassword: "गलत पासवर्ड", fillAll: "कृपया सभी जानकारी भरें",
-    invalidPhone: "कृपया सही 10 अंकों का मोबाइल नंबर डालें", backToMarket: "वापस",
-    perKg: "प्रति किलो", perGram: "प्रति ग्राम", perDozen: "प्रति दर्जन", perPiece: "प्रति पीस",
-    perBunch: "प्रति गुच्छा", perBox: "प्रति बॉक्स", perPack: "प्रति पैक",
-    demoPassword: "डेमो पासवर्ड", newHere: "नए दुकानदार हैं?", alreadyReg: "पहले से रजिस्टर हैं?",
-    phoneLogin: "फ़ोन नंबर", setPassword: "पासवर्ड बनाएं", watchVideo: "वीडियो देखें",
-    locationSaved: "लोकेशन जुड़ गई", locationFailed: "लोकेशन नहीं मिल पाई, पता खुद लिखें",
-    edit: "बदलें", myShop: "मेरी दुकान", platformLogo: "प्लेटफ़ॉर्म लोगो URL",
-    noVendorsYet: "अभी तक कोई दुकानदार रजिस्टर नहीं हुआ",
-    deliveryBoys: "डिलीवरी बॉय", addDeliveryBoy: "नया डिलीवरी बॉय जोड़ें",
-    addVendor: "नया दुकानदार जोड़ें", vendorAdded: "दुकानदार जुड़ गया",
-    fillRequiredFields: "कृपया नाम, फ़ोन और पासवर्ड ज़रूर भरें", phoneExists: "यह फ़ोन नंबर पहले से मौजूद है",
-    deliveryBoyName: "नाम", deliveryPhone: "मोबाइल नंबर", deliveryPassword: "पासवर्ड बनाएं",
-    commissionType: "कमीशन का तरीका", flatPerOrder: "फ्लैट ₹ प्रति ऑर्डर", percentOfOrder: "% प्रति ऑर्डर",
-    deliveryLogin: "डिलीवरी बॉय लॉगिन", myOrders: "मेरे ऑर्डर", markOutForDelivery: "डिलीवरी के लिए निकला",
-    markDelivered: "डिलीवर हो गया", delivered: "डिलीवर हो गया", outForDelivery: "डिलीवरी पर",
-    assigned: "असाइन हुआ", placed: "नया ऑर्डर", assignTo: "डिलीवरी बॉय चुनें", unassigned: "कोई नहीं चुना",
-    out_for_delivery: "डिलीवरी पर",
-    myEarnings: "मेरी कमाई", totalDelivered: "कुल डिलीवर हुए", noAssignedOrders: "अभी कोई ऑर्डर असाइन नहीं हुआ",
-    gstNumber: "GST नंबर (वैकल्पिक)", gstNote: "ताज़ी फल-सब्ज़ी पर आमतौर पर GST नहीं लगता। पैक/प्रोसेस्ड सामान के लिए अपने CA से पुष्टि करें।",
-    bankDetails: "बैंक खाता (सिर्फ आपके रिकॉर्ड के लिए)", accountHolder: "खाताधारक का नाम",
-    accountNumber: "खाता संख्या", ifsc: "IFSC कोड", bankName: "बैंक का नाम",
-    platformName: "आपके प्लेटफ़ॉर्म का नाम", deliveryStatus: "डिलीवरी स्थिति",
-    active_status: "सक्रिय", inactive_status: "निष्क्रिय", earningsSummary: "कमाई का हिसाब",
-    orderCommission: "प्रति ऑर्डर कमीशन",
-    platformUpiId: "आपकी UPI ID (सभी UPI/ऑनलाइन पेमेंट यहाँ आएंगे)",
-    dueAmount: "बकाया राशि", recordPayment: "भुगतान दर्ज करें", paidSoFar: "अब तक भुगतान किया",
-    enterAmount: "राशि (₹) डालें", confirm: "पक्का करें", paymentGoesToPlatform: "यह पैसा सीधे आपकी UPI ID में आएगा",
-    scanToPay: "स्कैन करके भुगतान करें",
-    theirUpi: "इनकी UPI ID", noUpiSet: "अभी UPI ID सेट नहीं की है", upiOptional: "UPI ID (वैकल्पिक)",
-    zones: "क्षेत्र (एरिया)", addZone: "नया क्षेत्र जोड़ें", zoneName: "क्षेत्र का नाम (जैसे: सिविल लाइंस)",
-    noZonesYet: "अभी कोई क्षेत्र नहीं जोड़ा गया", distributors: "डिस्ट्रीब्यूटर", addDistributor: "नया डिस्ट्रीब्यूटर जोड़ें",
-    distributorName: "डिस्ट्रीब्यूटर का नाम", assignZone: "क्षेत्र चुनें", selectZone: "-- क्षेत्र चुनें --",
-    noDistributorYet: "अभी कोई डिस्ट्रीब्यूटर नहीं जोड़ा गया", yourZone: "आपका क्षेत्र", zoneUnassigned: "कोई क्षेत्र तय नहीं",
-    distributorLogin: "डिस्ट्रीब्यूटर लॉगिन", deliverArea: "डिलीवरी क्षेत्र चुनें", selectDeliverArea: "-- अपना क्षेत्र चुनें --",
-    noZonesConfigured: "अभी कोई डिलीवरी क्षेत्र सेट नहीं है, कृपया एडमिन से संपर्क करें",
-    distributorAssistant: "यह एडमिन असिस्टेंट है — अपने क्षेत्र के ऑर्डर संभालता है, पूरा नियंत्रण मुख्य एडमिन के पास रहता है",
-    zoneRequired: "कृपया अपना डिलीवरी क्षेत्र चुनें",
-    deliveryCharge: "डिलीवरी चार्ज", freeDeliveryAbove: "मुफ़्त डिलीवरी की न्यूनतम राशि (₹)",
-    deliveryChargeAmount: "डिलीवरी चार्ज राशि (₹)", freeDeliveryNote: "इस राशि से कम के ऑर्डर पर डिलीवरी चार्ज जुड़ेगा",
-    addedBelow: "से कम के ऑर्डर पर जुड़ता है",
-    mySales: "मेरे सामान की बिक्री", addedByAdmin: "एडमिन", addedByDistributor: "डिस्ट्रीब्यूटर",
-    addedByVendor: "दुकानदार", addedBy: "जोड़ा",
-    youOwe: "आपको इन्हें देने हैं", theyOwe: "इनसे आपको लेने हैं", settled: "हिसाब बराबर है",
-    iPaid: "मैंने भुगतान किया", iCollected: "मैंने पैसा लिया", cashHeldNote: "नगद ऑर्डर की राशि इनके पास ही रहती है",
-    trackOrder: "अपना ऑर्डर देखें", enterPhoneToTrack: "अपना मोबाइल नंबर डालें",
-    yourOrders: "आपके ऑर्डर", noOrdersFound: "इस नंबर से कोई ऑर्डर नहीं मिला", find: "खोजें",
-    myProducts: "मेरा सामान", productsAddedByMe: "मैंने जो सामान जोड़ा है",
+    appName: "à¤¤à¤¾à¤œà¤¼à¤¾ à¤¬à¤¾à¤œà¤¼à¤¾à¤°", tagline: "à¤†à¤œ à¤•à¥€ à¤¤à¤¾à¤œà¤¼à¥€ à¤¸à¤¬à¥à¤œà¤¼à¥€ à¤”à¤° à¤«à¤², à¤˜à¤° à¤¬à¥ˆà¤ à¥‡ à¤®à¤‚à¤—à¤µà¤¾à¤à¤‚",
+    searchProducts: "à¤¸à¤¾à¤®à¤¾à¤¨ à¤–à¥‹à¤œà¥‡à¤‚...", allCategories: "à¤¸à¤­à¥€", addToCart: "à¤•à¤¾à¤°à¥à¤Ÿ à¤®à¥‡à¤‚ à¤¡à¤¾à¤²à¥‡à¤‚",
+    outOfStock: "à¤¸à¥à¤Ÿà¥‰à¤• à¤–à¤¼à¤¤à¥à¤®", cart: "à¤Ÿà¥‹à¤•à¤°à¥€", emptyCart: "à¤Ÿà¥‹à¤•à¤°à¥€ à¤…à¤­à¥€ à¤–à¤¾à¤²à¥€ à¤¹à¥ˆ",
+    total: "à¤•à¥à¤²", checkout: "à¤‘à¤°à¥à¤¡à¤° à¤•à¤°à¥‡à¤‚", back: "à¤µà¤¾à¤ªà¤¸", deliveryDetails: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥€ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€",
+    fullName: "à¤ªà¥‚à¤°à¤¾ à¤¨à¤¾à¤®", phone: "à¤®à¥‹à¤¬à¤¾à¤‡à¤² à¤¨à¤‚à¤¬à¤°", address: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¤¾ à¤ªà¤¤à¤¾",
+    useLocation: "à¤®à¥‡à¤°à¥€ à¤®à¥Œà¤œà¥‚à¤¦à¤¾ à¤²à¥‹à¤•à¥‡à¤¶à¤¨ à¤‡à¤¸à¥à¤¤à¥‡à¤®à¤¾à¤² à¤•à¤°à¥‡à¤‚", locating: "à¤²à¥‹à¤•à¥‡à¤¶à¤¨ à¤¢à¥‚à¤‚à¤¢à¥€ à¤œà¤¾ à¤°à¤¹à¥€ à¤¹à¥ˆ...",
+    deliverySlot: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¤¾ à¤¸à¤®à¤¯", morning: "à¤¸à¥à¤¬à¤¹ (7â€“10 AM)", afternoon: "à¤¦à¥‹à¤ªà¤¹à¤° (12â€“3 PM)",
+    evening: "à¤¶à¤¾à¤® (5â€“8 PM)", coupon: "à¤•à¥‚à¤ªà¤¨ à¤•à¥‹à¤¡", applyCoupon: "à¤²à¤¾à¤—à¥‚ à¤•à¤°à¥‡à¤‚", couponApplied: "à¤•à¥‚à¤ªà¤¨ à¤²à¤¾à¤—à¥‚ à¤¹à¥à¤†",
+    invalidCoupon: "à¤…à¤®à¤¾à¤¨à¥à¤¯ à¤•à¥‚à¤ªà¤¨ à¤•à¥‹à¤¡", discount: "à¤›à¥‚à¤Ÿ", paymentMethod: "à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤•à¤¾ à¤¤à¤°à¥€à¤•à¤¾",
+    cod: "à¤¨à¤•à¤¦ (à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤ªà¤°)", upi: "UPI", online: "à¤‘à¤¨à¤²à¤¾à¤‡à¤¨ à¤­à¥à¤—à¤¤à¤¾à¤¨", payToUpi: "à¤‡à¤¸ UPI ID à¤ªà¤° à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤•à¤°à¥‡à¤‚",
+    placeOrder: "à¤‘à¤°à¥à¤¡à¤° à¤ªà¤•à¥à¤•à¤¾ à¤•à¤°à¥‡à¤‚", placing: "à¤­à¥‡à¤œà¤¾ à¤œà¤¾ à¤°à¤¹à¤¾ à¤¹à¥ˆ...", orderPlaced: "à¤‘à¤°à¥à¤¡à¤° à¤®à¤¿à¤² à¤—à¤¯à¤¾!",
+    orderNumber: "à¤‘à¤°à¥à¤¡à¤° à¤¨à¤‚à¤¬à¤°", willCall: "à¤¹à¤® à¤œà¤²à¥à¤¦ à¤¹à¥€ à¤†à¤ªà¤•à¥‹ à¤«à¤¼à¥‹à¤¨ à¤•à¤°à¥‡à¤‚à¤—à¥‡", ok: "à¤ à¥€à¤• à¤¹à¥ˆ",
+    vendorLogin: "à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° à¤²à¥‰à¤—à¤¿à¤¨ / à¤°à¤œà¤¿à¤¸à¥à¤Ÿà¤° (à¤µà¥ˆà¤•à¤²à¥à¤ªà¤¿à¤•)", adminLogin: "à¤ªà¥à¤²à¥‡à¤Ÿà¤«à¤¼à¥‰à¤°à¥à¤® à¤à¤¡à¤®à¤¿à¤¨",
+    login: "à¤²à¥‰à¤—à¤¿à¤¨ à¤•à¤°à¥‡à¤‚", register: "à¤°à¤œà¤¿à¤¸à¥à¤Ÿà¤° à¤•à¤°à¥‡à¤‚", logout: "à¤²à¥‰à¤—à¤†à¤‰à¤Ÿ", password: "à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡",
+    shopName: "à¤¦à¥à¤•à¤¾à¤¨ à¤•à¤¾ à¤¨à¤¾à¤®", ownerName: "à¤®à¤¾à¤²à¤¿à¤• à¤•à¤¾ à¤¨à¤¾à¤®", shopAddress: "à¤¦à¥à¤•à¤¾à¤¨ à¤•à¤¾ à¤ªà¤¤à¤¾",
+    logoUrl: "à¤²à¥‹à¤—à¥‹ à¤•à¥€ à¤²à¤¿à¤‚à¤• (URL)", upiId: "à¤†à¤ªà¤•à¥€ UPI ID", pendingApproval: "à¤†à¤ªà¤•à¥€ à¤¦à¥à¤•à¤¾à¤¨ à¤…à¤­à¥€ à¤à¤¡à¤®à¤¿à¤¨ à¤•à¥€ à¤®à¤‚à¤œà¤¼à¥‚à¤°à¥€ à¤•à¤¾ à¤‡à¤‚à¤¤à¤œà¤¼à¤¾à¤° à¤•à¤° à¤°à¤¹à¥€ à¤¹à¥ˆ",
+    suspended: "à¤«à¤¼à¤¿à¤²à¤¹à¤¾à¤² à¤¨à¤¿à¤²à¤‚à¤¬à¤¿à¤¤ à¤¹à¥ˆ", dashboard: "à¤¡à¥ˆà¤¶à¤¬à¥‹à¤°à¥à¤¡", products: "à¤¸à¤¾à¤®à¤¾à¤¨",
+    orders: "à¤‘à¤°à¥à¤¡à¤°", sales: "à¤¬à¤¿à¤•à¥à¤°à¥€", profile: "à¤ªà¥à¤°à¥‹à¤«à¤¾à¤‡à¤²", addProduct: "à¤¨à¤¯à¤¾ à¤¸à¤¾à¤®à¤¾à¤¨ à¤œà¥‹à¤¡à¤¼à¥‡à¤‚",
+    productName: "à¤¨à¤¾à¤®", category: "à¤¶à¥à¤°à¥‡à¤£à¥€ (à¤œà¥ˆà¤¸à¥‡: à¤«à¤², à¤¸à¤¬à¥à¤œà¤¼à¥€)", price: "à¤•à¥€à¤®à¤¤ (â‚¹)", unit: "à¤‡à¤•à¤¾à¤ˆ",
+    imageUrl: "à¤«à¤¼à¥‹à¤Ÿà¥‹ à¤•à¥€ à¤²à¤¿à¤‚à¤• (URL)", videoUrl: "à¤µà¥€à¤¡à¤¿à¤¯à¥‹ à¤•à¥€ à¤²à¤¿à¤‚à¤• (URL) â€” à¤µà¥ˆà¤•à¤²à¥à¤ªà¤¿à¤•",
+    stockIn: "à¤¸à¥à¤Ÿà¥‰à¤• à¤®à¥‡à¤‚", stockOut: "à¤¸à¥à¤Ÿà¥‰à¤• à¤–à¤¼à¤¤à¥à¤®", save: "à¤¸à¥‡à¤µ à¤•à¤°à¥‡à¤‚", cancel: "à¤°à¤¦à¥à¤¦ à¤•à¤°à¥‡à¤‚",
+    noProducts: "à¤…à¤­à¥€ à¤•à¥‹à¤ˆ à¤¸à¤¾à¤®à¤¾à¤¨ à¤¨à¤¹à¥€à¤‚ à¤œà¥‹à¤¡à¤¼à¤¾ à¤—à¤¯à¤¾", noOrders: "à¤…à¤­à¥€ à¤¤à¤• à¤•à¥‹à¤ˆ à¤‘à¤°à¥à¤¡à¤° à¤¨à¤¹à¥€à¤‚ à¤†à¤¯à¤¾",
+    totalSales: "à¤•à¥à¤² à¤¬à¤¿à¤•à¥à¤°à¥€", totalOrders: "à¤•à¥à¤² à¤‘à¤°à¥à¤¡à¤°", commissionRate: "à¤•à¤®à¥€à¤¶à¤¨ à¤¦à¤°",
+    commissionPaid: "à¤ªà¥à¤²à¥‡à¤Ÿà¤«à¤¼à¥‰à¤°à¥à¤® à¤•à¤®à¥€à¤¶à¤¨", netEarning: "à¤†à¤ªà¤•à¥€ à¤•à¤®à¤¾à¤ˆ", viewOnMap: "à¤®à¥ˆà¤ª à¤®à¥‡à¤‚ à¤¦à¥‡à¤–à¥‡à¤‚",
+    vendors: "à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° (à¤­à¤µà¤¿à¤·à¥à¤¯ à¤•à¥‡ à¤²à¤¿à¤)", allOrders: "à¤¸à¤­à¥€ à¤‘à¤°à¥à¤¡à¤°", settings: "à¤¸à¥‡à¤Ÿà¤¿à¤‚à¤—à¥à¤¸", approve: "à¤®à¤‚à¤œà¤¼à¥‚à¤° à¤•à¤°à¥‡à¤‚",
+    suspend: "à¤¨à¤¿à¤²à¤‚à¤¬à¤¿à¤¤ à¤•à¤°à¥‡à¤‚", activate: "à¤¸à¤•à¥à¤°à¤¿à¤¯ à¤•à¤°à¥‡à¤‚", status: "à¤¸à¥à¤¥à¤¿à¤¤à¤¿", pending: "à¤®à¤‚à¤œà¤¼à¥‚à¤°à¥€ à¤¬à¤¾à¤•à¥€",
+    active: "à¤¸à¤•à¥à¤°à¤¿à¤¯", commissionPct: "à¤•à¤®à¥€à¤¶à¤¨ %", platformRevenue: "à¤ªà¥à¤²à¥‡à¤Ÿà¤«à¤¼à¥‰à¤°à¥à¤® à¤•à¥€ à¤•à¥à¤² à¤•à¤®à¤¾à¤ˆ",
+    defaultCommission: "à¤¡à¤¿à¤«à¤¼à¥‰à¤²à¥à¤Ÿ à¤•à¤®à¥€à¤¶à¤¨ %", coupons: "à¤•à¥‚à¤ªà¤¨", addCoupon: "à¤¨à¤¯à¤¾ à¤•à¥‚à¤ªà¤¨ à¤œà¥‹à¤¡à¤¼à¥‡à¤‚",
+    code: "à¤•à¥‹à¤¡", type: "à¤ªà¥à¤°à¤•à¤¾à¤°", value: "à¤µà¥ˆà¤²à¥à¤¯à¥‚", percent: "à¤ªà¥à¤°à¤¤à¤¿à¤¶à¤¤ (%)", flat: "à¤«à¥à¤²à¥ˆà¤Ÿ (â‚¹)",
+    remove: "à¤¹à¤Ÿà¤¾à¤à¤‚", refresh: "à¤¤à¤¾à¤œà¤¼à¤¾ à¤•à¤°à¥‡à¤‚", wrongPassword: "à¤—à¤²à¤¤ à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡", fillAll: "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤­à¥€ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€ à¤­à¤°à¥‡à¤‚",
+    invalidPhone: "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤¹à¥€ 10 à¤…à¤‚à¤•à¥‹à¤‚ à¤•à¤¾ à¤®à¥‹à¤¬à¤¾à¤‡à¤² à¤¨à¤‚à¤¬à¤° à¤¡à¤¾à¤²à¥‡à¤‚", backToMarket: "à¤µà¤¾à¤ªà¤¸",
+    perKg: "à¤ªà¥à¤°à¤¤à¤¿ à¤•à¤¿à¤²à¥‹", perGram: "à¤ªà¥à¤°à¤¤à¤¿ à¤—à¥à¤°à¤¾à¤®", perDozen: "à¤ªà¥à¤°à¤¤à¤¿ à¤¦à¤°à¥à¤œà¤¨", perPiece: "à¤ªà¥à¤°à¤¤à¤¿ à¤ªà¥€à¤¸",
+    perBunch: "à¤ªà¥à¤°à¤¤à¤¿ à¤—à¥à¤šà¥à¤›à¤¾", perBox: "à¤ªà¥à¤°à¤¤à¤¿ à¤¬à¥‰à¤•à¥à¤¸", perPack: "à¤ªà¥à¤°à¤¤à¤¿ à¤ªà¥ˆà¤•",
+    demoPassword: "à¤¡à¥‡à¤®à¥‹ à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡", newHere: "à¤¨à¤ à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° à¤¹à¥ˆà¤‚?", alreadyReg: "à¤ªà¤¹à¤²à¥‡ à¤¸à¥‡ à¤°à¤œà¤¿à¤¸à¥à¤Ÿà¤° à¤¹à¥ˆà¤‚?",
+    phoneLogin: "à¤«à¤¼à¥‹à¤¨ à¤¨à¤‚à¤¬à¤°", setPassword: "à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡ à¤¬à¤¨à¤¾à¤à¤‚", watchVideo: "à¤µà¥€à¤¡à¤¿à¤¯à¥‹ à¤¦à¥‡à¤–à¥‡à¤‚",
+    locationSaved: "à¤²à¥‹à¤•à¥‡à¤¶à¤¨ à¤œà¥à¤¡à¤¼ à¤—à¤ˆ", locationFailed: "à¤²à¥‹à¤•à¥‡à¤¶à¤¨ à¤¨à¤¹à¥€à¤‚ à¤®à¤¿à¤² à¤ªà¤¾à¤ˆ, à¤ªà¤¤à¤¾ à¤–à¥à¤¦ à¤²à¤¿à¤–à¥‡à¤‚",
+    edit: "à¤¬à¤¦à¤²à¥‡à¤‚", myShop: "à¤®à¥‡à¤°à¥€ à¤¦à¥à¤•à¤¾à¤¨", platformLogo: "à¤ªà¥à¤²à¥‡à¤Ÿà¤«à¤¼à¥‰à¤°à¥à¤® à¤²à¥‹à¤—à¥‹ URL",
+    noVendorsYet: "à¤…à¤­à¥€ à¤¤à¤• à¤•à¥‹à¤ˆ à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° à¤°à¤œà¤¿à¤¸à¥à¤Ÿà¤° à¤¨à¤¹à¥€à¤‚ à¤¹à¥à¤†",
+    deliveryBoys: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤¬à¥‰à¤¯", addDeliveryBoy: "à¤¨à¤¯à¤¾ à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤¬à¥‰à¤¯ à¤œà¥‹à¤¡à¤¼à¥‡à¤‚",
+    addVendor: "à¤¨à¤¯à¤¾ à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° à¤œà¥‹à¤¡à¤¼à¥‡à¤‚", vendorAdded: "à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤° à¤œà¥à¤¡à¤¼ à¤—à¤¯à¤¾",
+    fillRequiredFields: "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¨à¤¾à¤®, à¤«à¤¼à¥‹à¤¨ à¤”à¤° à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡ à¤œà¤¼à¤°à¥‚à¤° à¤­à¤°à¥‡à¤‚", phoneExists: "à¤¯à¤¹ à¤«à¤¼à¥‹à¤¨ à¤¨à¤‚à¤¬à¤° à¤ªà¤¹à¤²à¥‡ à¤¸à¥‡ à¤®à¥Œà¤œà¥‚à¤¦ à¤¹à¥ˆ",
+    deliveryBoyName: "à¤¨à¤¾à¤®", deliveryPhone: "à¤®à¥‹à¤¬à¤¾à¤‡à¤² à¤¨à¤‚à¤¬à¤°", deliveryPassword: "à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡ à¤¬à¤¨à¤¾à¤à¤‚",
+    commissionType: "à¤•à¤®à¥€à¤¶à¤¨ à¤•à¤¾ à¤¤à¤°à¥€à¤•à¤¾", flatPerOrder: "à¤«à¥à¤²à¥ˆà¤Ÿ â‚¹ à¤ªà¥à¤°à¤¤à¤¿ à¤‘à¤°à¥à¤¡à¤°", percentOfOrder: "% à¤ªà¥à¤°à¤¤à¤¿ à¤‘à¤°à¥à¤¡à¤°",
+    deliveryLogin: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤¬à¥‰à¤¯ à¤²à¥‰à¤—à¤¿à¤¨", myOrders: "à¤®à¥‡à¤°à¥‡ à¤‘à¤°à¥à¤¡à¤°", markOutForDelivery: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥‡ à¤²à¤¿à¤ à¤¨à¤¿à¤•à¤²à¤¾",
+    markDelivered: "à¤¡à¤¿à¤²à¥€à¤µà¤° à¤¹à¥‹ à¤—à¤¯à¤¾", delivered: "à¤¡à¤¿à¤²à¥€à¤µà¤° à¤¹à¥‹ à¤—à¤¯à¤¾", outForDelivery: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤ªà¤°",
+    assigned: "à¤…à¤¸à¤¾à¤‡à¤¨ à¤¹à¥à¤†", placed: "à¤¨à¤¯à¤¾ à¤‘à¤°à¥à¤¡à¤°", assignTo: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤¬à¥‰à¤¯ à¤šà¥à¤¨à¥‡à¤‚", unassigned: "à¤•à¥‹à¤ˆ à¤¨à¤¹à¥€à¤‚ à¤šà¥à¤¨à¤¾",
+    out_for_delivery: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤ªà¤°",
+    myEarnings: "à¤®à¥‡à¤°à¥€ à¤•à¤®à¤¾à¤ˆ", totalDelivered: "à¤•à¥à¤² à¤¡à¤¿à¤²à¥€à¤µà¤° à¤¹à¥à¤", noAssignedOrders: "à¤…à¤­à¥€ à¤•à¥‹à¤ˆ à¤‘à¤°à¥à¤¡à¤° à¤…à¤¸à¤¾à¤‡à¤¨ à¤¨à¤¹à¥€à¤‚ à¤¹à¥à¤†",
+    gstNumber: "GST à¤¨à¤‚à¤¬à¤° (à¤µà¥ˆà¤•à¤²à¥à¤ªà¤¿à¤•)", gstNote: "à¤¤à¤¾à¤œà¤¼à¥€ à¤«à¤²-à¤¸à¤¬à¥à¤œà¤¼à¥€ à¤ªà¤° à¤†à¤®à¤¤à¥Œà¤° à¤ªà¤° GST à¤¨à¤¹à¥€à¤‚ à¤²à¤—à¤¤à¤¾à¥¤ à¤ªà¥ˆà¤•/à¤ªà¥à¤°à¥‹à¤¸à¥‡à¤¸à¥à¤¡ à¤¸à¤¾à¤®à¤¾à¤¨ à¤•à¥‡ à¤²à¤¿à¤ à¤…à¤ªà¤¨à¥‡ CA à¤¸à¥‡ à¤ªà¥à¤·à¥à¤Ÿà¤¿ à¤•à¤°à¥‡à¤‚à¥¤",
+    bankDetails: "à¤¬à¥ˆà¤‚à¤• à¤–à¤¾à¤¤à¤¾ (à¤¸à¤¿à¤°à¥à¤« à¤†à¤ªà¤•à¥‡ à¤°à¤¿à¤•à¥‰à¤°à¥à¤¡ à¤•à¥‡ à¤²à¤¿à¤)", accountHolder: "à¤–à¤¾à¤¤à¤¾à¤§à¤¾à¤°à¤• à¤•à¤¾ à¤¨à¤¾à¤®",
+    accountNumber: "à¤–à¤¾à¤¤à¤¾ à¤¸à¤‚à¤–à¥à¤¯à¤¾", ifsc: "IFSC à¤•à¥‹à¤¡", bankName: "à¤¬à¥ˆà¤‚à¤• à¤•à¤¾ à¤¨à¤¾à¤®",
+    platformName: "à¤†à¤ªà¤•à¥‡ à¤ªà¥à¤²à¥‡à¤Ÿà¤«à¤¼à¥‰à¤°à¥à¤® à¤•à¤¾ à¤¨à¤¾à¤®", deliveryStatus: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤¸à¥à¤¥à¤¿à¤¤à¤¿",
+    active_status: "à¤¸à¤•à¥à¤°à¤¿à¤¯", inactive_status: "à¤¨à¤¿à¤·à¥à¤•à¥à¤°à¤¿à¤¯", earningsSummary: "à¤•à¤®à¤¾à¤ˆ à¤•à¤¾ à¤¹à¤¿à¤¸à¤¾à¤¬",
+    orderCommission: "à¤ªà¥à¤°à¤¤à¤¿ à¤‘à¤°à¥à¤¡à¤° à¤•à¤®à¥€à¤¶à¤¨",
+    platformUpiId: "à¤†à¤ªà¤•à¥€ UPI ID (à¤¸à¤­à¥€ UPI/à¤‘à¤¨à¤²à¤¾à¤‡à¤¨ à¤ªà¥‡à¤®à¥‡à¤‚à¤Ÿ à¤¯à¤¹à¤¾à¤ à¤†à¤à¤‚à¤—à¥‡)",
+    dueAmount: "à¤¬à¤•à¤¾à¤¯à¤¾ à¤°à¤¾à¤¶à¤¿", recordPayment: "à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤¦à¤°à¥à¤œ à¤•à¤°à¥‡à¤‚", paidSoFar: "à¤…à¤¬ à¤¤à¤• à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤•à¤¿à¤¯à¤¾",
+    enterAmount: "à¤°à¤¾à¤¶à¤¿ (â‚¹) à¤¡à¤¾à¤²à¥‡à¤‚", confirm: "à¤ªà¤•à¥à¤•à¤¾ à¤•à¤°à¥‡à¤‚", paymentGoesToPlatform: "à¤¯à¤¹ à¤ªà¥ˆà¤¸à¤¾ à¤¸à¥€à¤§à¥‡ à¤†à¤ªà¤•à¥€ UPI ID à¤®à¥‡à¤‚ à¤†à¤à¤—à¤¾",
+    scanToPay: "à¤¸à¥à¤•à¥ˆà¤¨ à¤•à¤°à¤•à¥‡ à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤•à¤°à¥‡à¤‚",
+    theirUpi: "à¤‡à¤¨à¤•à¥€ UPI ID", noUpiSet: "à¤…à¤­à¥€ UPI ID à¤¸à¥‡à¤Ÿ à¤¨à¤¹à¥€à¤‚ à¤•à¥€ à¤¹à¥ˆ", upiOptional: "UPI ID (à¤µà¥ˆà¤•à¤²à¥à¤ªà¤¿à¤•)",
+    zones: "à¤•à¥à¤·à¥‡à¤¤à¥à¤° (à¤à¤°à¤¿à¤¯à¤¾)", addZone: "à¤¨à¤¯à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤œà¥‹à¤¡à¤¼à¥‡à¤‚", zoneName: "à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤•à¤¾ à¤¨à¤¾à¤® (à¤œà¥ˆà¤¸à¥‡: à¤¸à¤¿à¤µà¤¿à¤² à¤²à¤¾à¤‡à¤‚à¤¸)",
+    noZonesYet: "à¤…à¤­à¥€ à¤•à¥‹à¤ˆ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤¨à¤¹à¥€à¤‚ à¤œà¥‹à¤¡à¤¼à¤¾ à¤—à¤¯à¤¾", distributors: "à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤°", addDistributor: "à¤¨à¤¯à¤¾ à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤° à¤œà¥‹à¤¡à¤¼à¥‡à¤‚",
+    distributorName: "à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤° à¤•à¤¾ à¤¨à¤¾à¤®", assignZone: "à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤šà¥à¤¨à¥‡à¤‚", selectZone: "-- à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤šà¥à¤¨à¥‡à¤‚ --",
+    noDistributorYet: "à¤…à¤­à¥€ à¤•à¥‹à¤ˆ à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤° à¤¨à¤¹à¥€à¤‚ à¤œà¥‹à¤¡à¤¼à¤¾ à¤—à¤¯à¤¾", yourZone: "à¤†à¤ªà¤•à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°", zoneUnassigned: "à¤•à¥‹à¤ˆ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤¤à¤¯ à¤¨à¤¹à¥€à¤‚",
+    distributorLogin: "à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤° à¤²à¥‰à¤—à¤¿à¤¨", deliverArea: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤šà¥à¤¨à¥‡à¤‚", selectDeliverArea: "-- à¤…à¤ªà¤¨à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤šà¥à¤¨à¥‡à¤‚ --",
+    noZonesConfigured: "à¤…à¤­à¥€ à¤•à¥‹à¤ˆ à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤¸à¥‡à¤Ÿ à¤¨à¤¹à¥€à¤‚ à¤¹à¥ˆ, à¤•à¥ƒà¤ªà¤¯à¤¾ à¤à¤¡à¤®à¤¿à¤¨ à¤¸à¥‡ à¤¸à¤‚à¤ªà¤°à¥à¤• à¤•à¤°à¥‡à¤‚",
+    distributorAssistant: "à¤¯à¤¹ à¤à¤¡à¤®à¤¿à¤¨ à¤…à¤¸à¤¿à¤¸à¥à¤Ÿà¥‡à¤‚à¤Ÿ à¤¹à¥ˆ â€” à¤…à¤ªà¤¨à¥‡ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤•à¥‡ à¤‘à¤°à¥à¤¡à¤° à¤¸à¤‚à¤­à¤¾à¤²à¤¤à¤¾ à¤¹à¥ˆ, à¤ªà¥‚à¤°à¤¾ à¤¨à¤¿à¤¯à¤‚à¤¤à¥à¤°à¤£ à¤®à¥à¤–à¥à¤¯ à¤à¤¡à¤®à¤¿à¤¨ à¤•à¥‡ à¤ªà¤¾à¤¸ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ",
+    zoneRequired: "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤…à¤ªà¤¨à¤¾ à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤šà¥à¤¨à¥‡à¤‚",
+    deliveryCharge: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤šà¤¾à¤°à¥à¤œ", freeDeliveryAbove: "à¤®à¥à¤«à¤¼à¥à¤¤ à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤•à¥€ à¤¨à¥à¤¯à¥‚à¤¨à¤¤à¤® à¤°à¤¾à¤¶à¤¿ (â‚¹)",
+    deliveryChargeAmount: "à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤šà¤¾à¤°à¥à¤œ à¤°à¤¾à¤¶à¤¿ (â‚¹)", freeDeliveryNote: "à¤‡à¤¸ à¤°à¤¾à¤¶à¤¿ à¤¸à¥‡ à¤•à¤® à¤•à¥‡ à¤‘à¤°à¥à¤¡à¤° à¤ªà¤° à¤¡à¤¿à¤²à¥€à¤µà¤°à¥€ à¤šà¤¾à¤°à¥à¤œ à¤œà¥à¤¡à¤¼à¥‡à¤—à¤¾",
+    addedBelow: "à¤¸à¥‡ à¤•à¤® à¤•à¥‡ à¤‘à¤°à¥à¤¡à¤° à¤ªà¤° à¤œà¥à¤¡à¤¼à¤¤à¤¾ à¤¹à¥ˆ",
+    mySales: "à¤®à¥‡à¤°à¥‡ à¤¸à¤¾à¤®à¤¾à¤¨ à¤•à¥€ à¤¬à¤¿à¤•à¥à¤°à¥€", addedByAdmin: "à¤à¤¡à¤®à¤¿à¤¨", addedByDistributor: "à¤¡à¤¿à¤¸à¥à¤Ÿà¥à¤°à¥€à¤¬à¥à¤¯à¥‚à¤Ÿà¤°",
+    addedByVendor: "à¤¦à¥à¤•à¤¾à¤¨à¤¦à¤¾à¤°", addedBy: "à¤œà¥‹à¤¡à¤¼à¤¾",
+    youOwe: "à¤†à¤ªà¤•à¥‹ à¤‡à¤¨à¥à¤¹à¥‡à¤‚ à¤¦à¥‡à¤¨à¥‡ à¤¹à¥ˆà¤‚", theyOwe: "à¤‡à¤¨à¤¸à¥‡ à¤†à¤ªà¤•à¥‹ à¤²à¥‡à¤¨à¥‡ à¤¹à¥ˆà¤‚", settled: "à¤¹à¤¿à¤¸à¤¾à¤¬ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥ˆ",
+    iPaid: "à¤®à¥ˆà¤‚à¤¨à¥‡ à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤•à¤¿à¤¯à¤¾", iCollected: "à¤®à¥ˆà¤‚à¤¨à¥‡ à¤ªà¥ˆà¤¸à¤¾ à¤²à¤¿à¤¯à¤¾", cashHeldNote: "à¤¨à¤—à¤¦ à¤‘à¤°à¥à¤¡à¤° à¤•à¥€ à¤°à¤¾à¤¶à¤¿ à¤‡à¤¨à¤•à¥‡ à¤ªà¤¾à¤¸ à¤¹à¥€ à¤°à¤¹à¤¤à¥€ à¤¹à¥ˆ",
+    trackOrder: "à¤…à¤ªà¤¨à¤¾ à¤‘à¤°à¥à¤¡à¤° à¤¦à¥‡à¤–à¥‡à¤‚", enterPhoneToTrack: "à¤…à¤ªà¤¨à¤¾ à¤®à¥‹à¤¬à¤¾à¤‡à¤² à¤¨à¤‚à¤¬à¤° à¤¡à¤¾à¤²à¥‡à¤‚",
+    yourOrders: "à¤†à¤ªà¤•à¥‡ à¤‘à¤°à¥à¤¡à¤°", noOrdersFound: "à¤‡à¤¸ à¤¨à¤‚à¤¬à¤° à¤¸à¥‡ à¤•à¥‹à¤ˆ à¤‘à¤°à¥à¤¡à¤° à¤¨à¤¹à¥€à¤‚ à¤®à¤¿à¤²à¤¾", find: "à¤–à¥‹à¤œà¥‡à¤‚",
+    myProducts: "à¤®à¥‡à¤°à¤¾ à¤¸à¤¾à¤®à¤¾à¤¨", productsAddedByMe: "à¤®à¥ˆà¤‚à¤¨à¥‡ à¤œà¥‹ à¤¸à¤¾à¤®à¤¾à¤¨ à¤œà¥‹à¤¡à¤¼à¤¾ à¤¹à¥ˆ",
   },
   en: {
     appName: "Taaza Bazaar", tagline: "Fresh vegetables and fruits, delivered to your door",
@@ -135,8 +135,8 @@ const DICT = {
     total: "Total", checkout: "Checkout", back: "Back", deliveryDetails: "Delivery details",
     fullName: "Full name", phone: "Mobile number", address: "Delivery address",
     useLocation: "Use my current location", locating: "Finding location...",
-    deliverySlot: "Delivery time", morning: "Morning (7–10 AM)", afternoon: "Afternoon (12–3 PM)",
-    evening: "Evening (5–8 PM)", coupon: "Coupon code", applyCoupon: "Apply", couponApplied: "Coupon applied",
+    deliverySlot: "Delivery time", morning: "Morning (7â€“10 AM)", afternoon: "Afternoon (12â€“3 PM)",
+    evening: "Evening (5â€“8 PM)", coupon: "Coupon code", applyCoupon: "Apply", couponApplied: "Coupon applied",
     invalidCoupon: "Invalid coupon code", discount: "Discount", paymentMethod: "Payment method",
     cod: "Cash on delivery", upi: "UPI", online: "Online payment", payToUpi: "Pay to this UPI ID",
     placeOrder: "Place order", placing: "Placing order...", orderPlaced: "Order placed!",
@@ -147,8 +147,8 @@ const DICT = {
     logoUrl: "Logo link (URL)", upiId: "Your UPI ID", pendingApproval: "Your shop is awaiting admin approval",
     suspended: "Currently suspended", dashboard: "Dashboard", products: "Products",
     orders: "Orders", sales: "Sales", profile: "Profile", addProduct: "Add new product",
-    productName: "Name", category: "Category (e.g. Fruits, Vegetables)", price: "Price (₹)", unit: "Unit",
-    imageUrl: "Photo link (URL)", videoUrl: "Video link (URL) — optional",
+    productName: "Name", category: "Category (e.g. Fruits, Vegetables)", price: "Price (â‚¹)", unit: "Unit",
+    imageUrl: "Photo link (URL)", videoUrl: "Video link (URL) â€” optional",
     stockIn: "In stock", stockOut: "Out of stock", save: "Save", cancel: "Cancel",
     noProducts: "No products added yet", noOrders: "No orders yet",
     totalSales: "Total sales", totalOrders: "Total orders", commissionRate: "Commission rate",
@@ -157,7 +157,7 @@ const DICT = {
     suspend: "Suspend", activate: "Activate", status: "Status", pending: "Pending approval",
     active: "Active", commissionPct: "Commission %", platformRevenue: "Total platform revenue",
     defaultCommission: "Default commission %", coupons: "Coupons", addCoupon: "Add coupon",
-    code: "Code", type: "Type", value: "Value", percent: "Percent (%)", flat: "Flat (₹)",
+    code: "Code", type: "Type", value: "Value", percent: "Percent (%)", flat: "Flat (â‚¹)",
     remove: "Remove", refresh: "Refresh", wrongPassword: "Wrong password", fillAll: "Please fill all fields",
     invalidPhone: "Please enter a valid 10-digit mobile number", backToMarket: "Back",
     perKg: "per kg", perGram: "per gram", perDozen: "per dozen", perPiece: "per piece",
@@ -171,7 +171,7 @@ const DICT = {
     addVendor: "Add new seller", vendorAdded: "Seller added",
     fillRequiredFields: "Please fill name, phone and password", phoneExists: "This phone number is already registered",
     deliveryBoyName: "Name", deliveryPhone: "Mobile number", deliveryPassword: "Set password",
-    commissionType: "Commission type", flatPerOrder: "Flat ₹ per order", percentOfOrder: "% of order",
+    commissionType: "Commission type", flatPerOrder: "Flat â‚¹ per order", percentOfOrder: "% of order",
     deliveryLogin: "Delivery boy login", myOrders: "My orders", markOutForDelivery: "Mark out for delivery",
     markDelivered: "Mark delivered", delivered: "Delivered", outForDelivery: "Out for delivery",
     assigned: "Assigned", placed: "New order", assignTo: "Assign delivery boy", unassigned: "Unassigned",
@@ -185,7 +185,7 @@ const DICT = {
     orderCommission: "Commission per order",
     platformUpiId: "Your UPI ID (all UPI/online payments arrive here)",
     dueAmount: "Amount due", recordPayment: "Record payment", paidSoFar: "Paid so far",
-    enterAmount: "Enter amount (₹)", confirm: "Confirm", paymentGoesToPlatform: "This payment goes directly to your UPI ID",
+    enterAmount: "Enter amount (â‚¹)", confirm: "Confirm", paymentGoesToPlatform: "This payment goes directly to your UPI ID",
     scanToPay: "Scan to pay",
     theirUpi: "Their UPI ID", noUpiSet: "UPI ID not set yet", upiOptional: "UPI ID (optional)",
     zones: "Zones (areas)", addZone: "Add new zone", zoneName: "Zone name (e.g. Civil Lines)",
@@ -194,10 +194,10 @@ const DICT = {
     noDistributorYet: "No distributors added yet", yourZone: "Your zone", zoneUnassigned: "No zone assigned",
     distributorLogin: "Distributor login", deliverArea: "Select delivery area", selectDeliverArea: "-- Select your area --",
     noZonesConfigured: "No delivery zones set up yet, please contact admin",
-    distributorAssistant: "This is an admin assistant — handles orders in their zone, fully controlled by the main admin",
+    distributorAssistant: "This is an admin assistant â€” handles orders in their zone, fully controlled by the main admin",
     zoneRequired: "Please select your delivery zone",
-    deliveryCharge: "Delivery charge", freeDeliveryAbove: "Free delivery above (₹)",
-    deliveryChargeAmount: "Delivery charge amount (₹)", freeDeliveryNote: "Orders below this amount get a delivery charge",
+    deliveryCharge: "Delivery charge", freeDeliveryAbove: "Free delivery above (â‚¹)",
+    deliveryChargeAmount: "Delivery charge amount (â‚¹)", freeDeliveryNote: "Orders below this amount get a delivery charge",
     addedBelow: "added below this order value",
     mySales: "My product sales", addedByAdmin: "Admin", addedByDistributor: "Distributor",
     addedByVendor: "Seller", addedBy: "Added by",
@@ -213,13 +213,13 @@ const LangContext = createContext({ lang: "hi", t: (k) => k });
 const useLang = () => useContext(LangContext);
 
 const UNIT_LABELS = {
-  kg: { hi: "किलो", en: "kg", key: "perKg" },
-  gram: { hi: "ग्राम", en: "gram", key: "perGram" },
-  dozen: { hi: "दर्जन", en: "dozen", key: "perDozen" },
-  piece: { hi: "पीस", en: "piece", key: "perPiece" },
-  bunch: { hi: "गुच्छा", en: "bunch", key: "perBunch" },
-  box: { hi: "बॉक्स", en: "box", key: "perBox" },
-  pack: { hi: "पैक", en: "pack", key: "perPack" },
+  kg: { hi: "à¤•à¤¿à¤²à¥‹", en: "kg", key: "perKg" },
+  gram: { hi: "à¤—à¥à¤°à¤¾à¤®", en: "gram", key: "perGram" },
+  dozen: { hi: "à¤¦à¤°à¥à¤œà¤¨", en: "dozen", key: "perDozen" },
+  piece: { hi: "à¤ªà¥€à¤¸", en: "piece", key: "perPiece" },
+  bunch: { hi: "à¤—à¥à¤šà¥à¤›à¤¾", en: "bunch", key: "perBunch" },
+  box: { hi: "à¤¬à¥‰à¤•à¥à¤¸", en: "box", key: "perBox" },
+  pack: { hi: "à¤ªà¥ˆà¤•", en: "pack", key: "perPack" },
 };
 
 /* =========================================================
@@ -229,23 +229,23 @@ const SUPER_ADMIN_PASSWORD = "platform123";
 const DEFAULT_COMMISSION = 10;
 
 const SEED_ZONES = [
-  { id: "z1", name: "सिविल लाइंस" },
-  { id: "z2", name: "गांधी मार्केट" },
-  { id: "z3", name: "कटघर" },
+  { id: "z1", name: "à¤¸à¤¿à¤µà¤¿à¤² à¤²à¤¾à¤‡à¤‚à¤¸" },
+  { id: "z2", name: "à¤—à¤¾à¤‚à¤§à¥€ à¤®à¤¾à¤°à¥à¤•à¥‡à¤Ÿ" },
+  { id: "z3", name: "à¤•à¤Ÿà¤˜à¤°" },
 ];
 
 const SEED_PRODUCTS = [
-  { id: "p1", name: "सेब", category: "फल", price: 180, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
-  { id: "p2", name: "केला", category: "फल", price: 60, unit: "dozen", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
-  { id: "p3", name: "टमाटर", category: "सब्ज़ी", price: 30, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
-  { id: "p4", name: "आलू", category: "सब्ज़ी", price: 25, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
-  { id: "p5", name: "पालक", category: "सब्ज़ी", price: 20, unit: "bunch", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
+  { id: "p1", name: "à¤¸à¥‡à¤¬", category: "à¤«à¤²", price: 180, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
+  { id: "p2", name: "à¤•à¥‡à¤²à¤¾", category: "à¤«à¤²", price: 60, unit: "dozen", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
+  { id: "p3", name: "à¤Ÿà¤®à¤¾à¤Ÿà¤°", category: "à¤¸à¤¬à¥à¤œà¤¼à¥€", price: 30, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
+  { id: "p4", name: "à¤†à¤²à¥‚", category: "à¤¸à¤¬à¥à¤œà¤¼à¥€", price: 25, unit: "kg", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
+  { id: "p5", name: "à¤ªà¤¾à¤²à¤•", category: "à¤¸à¤¬à¥à¤œà¤¼à¥€", price: 20, unit: "bunch", imageUrl: "", videoUrl: "", stock: true, ownerType: "admin", ownerId: null },
 ];
 
-// Legacy vendor marketplace — kept dormant for future use, not shown to customers
+// Legacy vendor marketplace â€” kept dormant for future use, not shown to customers
 const SEED_VENDORS = [];
 
-const EMOJI_FALLBACK = { "फल": "🍎", "सब्ज़ी": "🥕", "fruits": "🍎", "vegetables": "🥕" };
+const EMOJI_FALLBACK = { "à¤«à¤²": "ðŸŽ", "à¤¸à¤¬à¥à¤œà¤¼à¥€": "ðŸ¥•", "fruits": "ðŸŽ", "vegetables": "ðŸ¥•" };
 
 /* =========================================================
    STORAGE HELPERS
@@ -342,7 +342,7 @@ const ChalkTag = ({ price, unit, lang }) => {
       fontSize: "22px", lineHeight: 1, transform: "rotate(-2deg)", boxShadow: "0 2px 0 rgba(0,0,0,0.15)",
       whiteSpace: "nowrap", display: "inline-block",
     }}>
-      ₹{price}<span style={{ fontSize: "13px", opacity: 0.85 }}> /{lang === "hi" ? u.hi : u.en}</span>
+      â‚¹{price}<span style={{ fontSize: "13px", opacity: 0.85 }}> /{lang === "hi" ? u.hi : u.en}</span>
     </div>
   );
 };
@@ -412,7 +412,7 @@ function LocationField({ address, setAddress, lat, lng, setLatLng, placeholder }
       >
         <Navigation size={13} /> {locating ? t("locating") : t("useLocation")}
       </button>
-      {lat && lng && <span style={{ fontSize: 12, color: COLORS.muted, marginLeft: 8 }}>✓ {t("locationSaved")}</span>}
+      {lat && lng && <span style={{ fontSize: 12, color: COLORS.muted, marginLeft: 8 }}>âœ“ {t("locationSaved")}</span>}
       {error === "denied" && <div style={{ fontSize: 12, color: COLORS.accentRed, marginTop: 4 }}>{t("locationFailed")}</div>}
     </div>
   );
@@ -424,7 +424,7 @@ function LocationField({ address, setAddress, lat, lng, setLatLng, placeholder }
 function ProductCard({ product, qty, onAdd, onInc, onDec }) {
   const { t, lang } = useLang();
   const [imgBroken, setImgBroken] = useState(false);
-  const emoji = EMOJI_FALLBACK[product.category] || "🛒";
+  const emoji = EMOJI_FALLBACK[product.category] || "ðŸ›’";
   return (
     <div style={{
       background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: "14px",
@@ -517,10 +517,10 @@ function CartDrawer({ open, onClose, cart, products, onInc, onDec, onCheckout })
             const u = UNIT_LABELS[product.unit] || { hi: product.unit, en: product.unit };
             return (
               <div key={product.id} style={{ display: "flex", alignItems: "center", gap: "10px", background: "#fff", borderRadius: "12px", padding: "10px 12px", border: `1px solid ${COLORS.border}` }}>
-                <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[product.category] || "🛒"}</div>
+                <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[product.category] || "ðŸ›’"}</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontWeight: 600, color: COLORS.text }}>{product.name}</div>
-                  <div style={{ fontSize: "13px", color: COLORS.muted }}>₹{product.price}/{lang === "hi" ? u.hi : u.en}</div>
+                  <div style={{ fontSize: "13px", color: COLORS.muted }}>â‚¹{product.price}/{lang === "hi" ? u.hi : u.en}</div>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                   <button className="tb-focus" onClick={() => onDec(product.id)} style={{ background: COLORS.soft, border: "none", borderRadius: "6px", width: 26, height: 26, cursor: "pointer" }}>
@@ -539,7 +539,7 @@ function CartDrawer({ open, onClose, cart, products, onInc, onDec, onCheckout })
         {items.length > 0 && (
           <div style={{ padding: "16px 18px", borderTop: `1px solid ${COLORS.border}` }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "12px", fontWeight: 700, fontSize: "17px", color: COLORS.text }}>
-              <span>{t("total")}</span><span>₹{total}</span>
+              <span>{t("total")}</span><span>â‚¹{total}</span>
             </div>
             <button className="tb-focus" onClick={onCheckout}
               style={{ width: "100%", background: COLORS.accentRed, color: "#fff", border: "none", borderRadius: "10px", padding: "12px 0", fontWeight: 700, fontSize: "15px", cursor: "pointer" }}>
@@ -677,25 +677,25 @@ function CheckoutModal({ open, onClose, onSubmit, submitting, cartTotal, platfor
 
         <div style={{ borderTop: `1px dashed ${COLORS.border}`, marginTop: 10, paddingTop: 10 }}>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 14, color: COLORS.muted, marginBottom: 4 }}>
-            <span>{t("total")}</span><span>₹{cartTotal}</span>
+            <span>{t("total")}</span><span>â‚¹{cartTotal}</span>
           </div>
           {discount > 0 && (
             <div style={{ display: "flex", justifyContent: "space-between", fontSize: 14, color: COLORS.accentRed, marginBottom: 4 }}>
-              <span>{t("discount")}</span><span>-₹{discount}</span>
+              <span>{t("discount")}</span><span>-â‚¹{discount}</span>
             </div>
           )}
           {appliedDeliveryCharge > 0 && (
             <div style={{ display: "flex", justifyContent: "space-between", fontSize: 14, color: COLORS.text, marginBottom: 4 }}>
-              <span>{t("deliveryCharge")}</span><span>+₹{appliedDeliveryCharge}</span>
+              <span>{t("deliveryCharge")}</span><span>+â‚¹{appliedDeliveryCharge}</span>
             </div>
           )}
           {freeDeliveryAbove > 0 && productTotal < freeDeliveryAbove && (
             <div style={{ fontSize: 12, color: COLORS.muted, marginBottom: 6 }}>
-              ₹{freeDeliveryAbove} {t("addedBelow")}
+              â‚¹{freeDeliveryAbove} {t("addedBelow")}
             </div>
           )}
           <div style={{ display: "flex", justifyContent: "space-between", fontWeight: 700, fontSize: 17, color: COLORS.text }}>
-            <span>{t("total")}</span><span>₹{finalTotal}</span>
+            <span>{t("total")}</span><span>â‚¹{finalTotal}</span>
           </div>
         </div>
 
@@ -748,7 +748,7 @@ function LangToggle() {
   return (
     <button className="tb-focus" onClick={() => setLang(lang === "hi" ? "en" : "hi")}
       style={{ background: COLORS.darkAlt, border: "none", borderRadius: "8px", padding: "8px 10px", cursor: "pointer", display: "flex", alignItems: "center", gap: 6, color: "#fff", fontSize: 12, fontWeight: 700 }}>
-      <Globe size={15} /> {lang === "hi" ? "EN" : "हिं"}
+      <Globe size={15} /> {lang === "hi" ? "EN" : "à¤¹à¤¿à¤‚"}
     </button>
   );
 }
@@ -779,7 +779,7 @@ function TopHeader({ platformLogoUrl, platformName, cartCount, onCartClick, show
 }
 
 /* =========================================================
-   STOREFRONT (single unified catalog — no vendor browsing)
+   STOREFRONT (single unified catalog â€” no vendor browsing)
 ========================================================= */
 function Storefront({ products, cart, onInc, onDec, cartCount, onCartClick, platformLogoUrl, platformName, onVendorLogin, onAdminLogin, onDistributorLogin }) {
   const { t } = useLang();
@@ -897,7 +897,7 @@ function TrackOrderModal({ onClose }) {
                   <span style={{ fontWeight: 700, color: COLORS.text }}>#{o.id.slice(-5).toUpperCase()}</span>
                   <span style={{ fontSize: 12, color: COLORS.faint }}>{new Date(o.createdAt).toLocaleDateString(lang === "hi" ? "hi-IN" : "en-IN")}</span>
                 </div>
-                <div style={{ fontSize: 13, color: COLORS.text }}>₹{o.total} · {t(o.deliveryStatus)}</div>
+                <div style={{ fontSize: 13, color: COLORS.text }}>â‚¹{o.total} Â· {t(o.deliveryStatus)}</div>
               </div>
             ))}
           </div>
@@ -908,7 +908,7 @@ function TrackOrderModal({ onClose }) {
 }
 
 /* =========================================================
-   LEGACY VENDOR SYSTEM (dormant — kept for possible future
+   LEGACY VENDOR SYSTEM (dormant â€” kept for possible future
    multi-shop marketplace expansion; not part of the main
    customer flow, which is a single unified storefront)
 ========================================================= */
@@ -1020,7 +1020,7 @@ function VendorDashboard({ vendor, products, setProducts, orders, onLogout }) {
   const addProduct = () => {
     if (!productForm.name.trim() || !productForm.price) return;
     const newProduct = {
-      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "अन्य" : "Other"),
+      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "à¤…à¤¨à¥à¤¯" : "Other"),
       price: Number(productForm.price), unit: productForm.unit, imageUrl: productForm.imageUrl.trim(),
       videoUrl: productForm.videoUrl.trim(), stock: true, ownerType: "vendor", ownerId: vendor.id,
     };
@@ -1082,11 +1082,11 @@ function VendorDashboard({ vendor, products, setProducts, orders, onLogout }) {
               {myProducts.length === 0 && <div style={{ textAlign: "center", color: COLORS.muted, padding: "20px 0" }}>{t("noProducts")}</div>}
               {myProducts.map((p) => (
                 <div key={p.id} style={{ background: "#fff", border: `1px solid ${COLORS.border}`, borderRadius: "12px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "🛒"}</div>}
+                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "ðŸ›’"}</div>}
                   <div style={{ flex: 1, minWidth: 120 }}>
-                    <div style={{ fontWeight: 600, color: COLORS.text }}>{p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>· {p.category}</span></div>
+                    <div style={{ fontWeight: 600, color: COLORS.text }}>{p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>Â· {p.category}</span></div>
                     <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "4px" }}>
-                      <span style={{ fontSize: 13, color: COLORS.muted }}>₹</span>
+                      <span style={{ fontSize: 13, color: COLORS.muted }}>â‚¹</span>
                       <input type="number" value={p.price} onChange={(e) => updateProductField(p.id, "price", Number(e.target.value) || 0)}
                         style={{ width: 64, padding: "4px 6px", borderRadius: "6px", border: `1px solid #D8D8CC`, fontSize: 13 }} />
                     </div>
@@ -1107,7 +1107,7 @@ function VendorDashboard({ vendor, products, setProducts, orders, onLogout }) {
         {tab === "sales" && (
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
             {[
-              { label: t("mySales"), value: `₹${myProductSales}`, highlight: true },
+              { label: t("mySales"), value: `â‚¹${myProductSales}`, highlight: true },
               { label: t("totalOrders"), value: myOrderCount },
             ].map((c, i) => (
               <div key={i} style={{ background: c.highlight ? COLORS.dark : "#fff", color: c.highlight ? "#fff" : COLORS.text, border: `1px solid ${COLORS.border}`, borderRadius: "14px", padding: "16px" }}>
@@ -1123,7 +1123,7 @@ function VendorDashboard({ vendor, products, setProducts, orders, onLogout }) {
 }
 
 /* =========================================================
-   DISTRIBUTOR AUTH (login only — accounts are created by the
+   DISTRIBUTOR AUTH (login only â€” accounts are created by the
    main admin, distributors don't self-register)
 ========================================================= */
 function DistributorAuthGate({ distributors, onLoginSuccess, onBack }) {
@@ -1193,7 +1193,7 @@ function DistributorDashboard({ distributor, zones, orders, deliveryBoys, produc
   const addProduct = () => {
     if (!productForm.name.trim() || !productForm.price) return;
     const newProduct = {
-      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "अन्य" : "Other"),
+      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "à¤…à¤¨à¥à¤¯" : "Other"),
       price: Number(productForm.price), unit: productForm.unit, imageUrl: productForm.imageUrl.trim(),
       videoUrl: productForm.videoUrl.trim(), stock: true, ownerType: "distributor", ownerId: distributor.id,
     };
@@ -1255,7 +1255,7 @@ function DistributorDashboard({ distributor, zones, orders, deliveryBoys, produc
                   <span style={{ fontWeight: 700, color: COLORS.text }}>#{o.id.slice(-5).toUpperCase()}</span>
                   <span style={{ fontSize: 12, color: COLORS.faint }}>{new Date(o.createdAt).toLocaleString(lang === "hi" ? "hi-IN" : "en-IN")}</span>
                 </div>
-                <div style={{ fontSize: 14, color: COLORS.text }}>{o.name} · {o.phone}</div>
+                <div style={{ fontSize: 14, color: COLORS.text }}>{o.name} Â· {o.phone}</div>
                 <div style={{ fontSize: 13, color: COLORS.muted, marginBottom: 4 }}>{o.address}</div>
                 <div style={{ fontSize: 12, color: COLORS.muted, marginBottom: 8, display: "flex", gap: 10, flexWrap: "wrap" }}>
                   <span>{t("deliverySlot")}: {t(o.slot)}</span>
@@ -1264,12 +1264,12 @@ function DistributorDashboard({ distributor, zones, orders, deliveryBoys, produc
                 <div style={{ borderTop: `1px dashed ${COLORS.border}`, paddingTop: "8px", display: "flex", flexDirection: "column", gap: "4px" }}>
                   {o.items.map((it) => (
                     <div key={it.id} style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: COLORS.text }}>
-                      <span>{it.name} × {it.qty}</span><span>₹{it.price * it.qty}</span>
+                      <span>{it.name} Ã— {it.qty}</span><span>â‚¹{it.price * it.qty}</span>
                     </div>
                   ))}
                 </div>
                 <div style={{ display: "flex", justifyContent: "space-between", fontWeight: 700, margin: "8px 0", color: COLORS.text }}>
-                  <span>{t("total")}</span><span>₹{o.total}</span>
+                  <span>{t("total")}</span><span>â‚¹{o.total}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                   <label style={{ fontSize: 12, color: COLORS.muted }}>{t("assignTo")}:</label>
@@ -1312,11 +1312,11 @@ function DistributorDashboard({ distributor, zones, orders, deliveryBoys, produc
               {myProducts.length === 0 && <div style={{ textAlign: "center", color: COLORS.muted, padding: "20px 0" }}>{t("noProducts")}</div>}
               {myProducts.map((p) => (
                 <div key={p.id} style={{ background: "#fff", border: `1px solid ${COLORS.border}`, borderRadius: "12px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "🛒"}</div>}
+                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "ðŸ›’"}</div>}
                   <div style={{ flex: 1, minWidth: 120 }}>
-                    <div style={{ fontWeight: 600, color: COLORS.text }}>{p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>· {p.category}</span></div>
+                    <div style={{ fontWeight: 600, color: COLORS.text }}>{p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>Â· {p.category}</span></div>
                     <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "4px" }}>
-                      <span style={{ fontSize: 13, color: COLORS.muted }}>₹</span>
+                      <span style={{ fontSize: 13, color: COLORS.muted }}>â‚¹</span>
                       <input type="number" value={p.price} onChange={(e) => updateProductField(p.id, "price", Number(e.target.value) || 0)}
                         style={{ width: 64, padding: "4px 6px", borderRadius: "6px", border: `1px solid #D8D8CC`, fontSize: 13 }} />
                     </div>
@@ -1337,11 +1337,11 @@ function DistributorDashboard({ distributor, zones, orders, deliveryBoys, produc
         {tab === "sales" && (
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
             {[
-              { label: t("totalSales"), value: `₹${totalSales}` },
+              { label: t("totalSales"), value: `â‚¹${totalSales}` },
               { label: t("totalOrders"), value: myOrders.length },
-              { label: t("commissionRate"), value: distributor.commissionType === "percent" ? `${distributor.commissionValue}%` : `₹${distributor.commissionValue}/${t("orders")}` },
-              { label: t("myEarnings"), value: `₹${totalCommission}`, highlight: true },
-              { label: t("mySales"), value: `₹${myProductSales}` },
+              { label: t("commissionRate"), value: distributor.commissionType === "percent" ? `${distributor.commissionValue}%` : `â‚¹${distributor.commissionValue}/${t("orders")}` },
+              { label: t("myEarnings"), value: `â‚¹${totalCommission}`, highlight: true },
+              { label: t("mySales"), value: `â‚¹${myProductSales}` },
             ].map((c, i) => (
               <div key={i} style={{ background: c.highlight ? COLORS.dark : "#fff", color: c.highlight ? "#fff" : COLORS.text, border: `1px solid ${COLORS.border}`, borderRadius: "14px", padding: "16px", gridColumn: c.highlight ? "1 / span 2" : "auto" }}>
                 <div style={{ fontSize: 12, opacity: 0.75, marginBottom: 4 }}>{c.label}</div>
@@ -1425,7 +1425,7 @@ function AdminDashboard({
   const addProduct = () => {
     if (!productForm.name.trim() || !productForm.price) return;
     const newProduct = {
-      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "अन्य" : "Other"),
+      id: uid("p"), name: productForm.name.trim(), category: productForm.category.trim() || (lang === "hi" ? "à¤…à¤¨à¥à¤¯" : "Other"),
       price: Number(productForm.price), unit: productForm.unit, imageUrl: productForm.imageUrl.trim(),
       videoUrl: productForm.videoUrl.trim(), stock: true, ownerType: "admin", ownerId: null,
     };
@@ -1549,7 +1549,7 @@ function AdminDashboard({
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, padding: "20px 20px 0", maxWidth: 800, margin: "0 auto" }}>
         <div style={{ background: COLORS.dark, color: "#fff", borderRadius: 14, padding: 16 }}>
           <div style={{ fontSize: 12, opacity: 0.8 }}>{t("totalSales")}</div>
-          <div className="tb-display" style={{ fontSize: 22, fontWeight: 700 }}>₹{totalSales}</div>
+          <div className="tb-display" style={{ fontSize: 22, fontWeight: 700 }}>â‚¹{totalSales}</div>
         </div>
         <div style={{ background: "#fff", border: `1px solid ${COLORS.border}`, borderRadius: 14, padding: 16 }}>
           <div style={{ fontSize: 12, color: COLORS.muted }}>{t("totalOrders")}</div>
@@ -1587,20 +1587,20 @@ function AdminDashboard({
               {products.length === 0 && <div style={{ textAlign: "center", color: COLORS.muted, padding: "20px 0" }}>{t("noProducts")}</div>}
               {products.map((p) => (
                 <div key={p.id} style={{ background: "#fff", border: `1px solid ${COLORS.border}`, borderRadius: "12px", padding: "12px 14px", display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "🛒"}</div>}
+                  {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: 40, height: 40, borderRadius: 8, objectFit: "cover" }} /> : <div style={{ fontSize: "26px" }}>{EMOJI_FALLBACK[p.category] || "ðŸ›’"}</div>}
                   <div style={{ flex: 1, minWidth: 120 }}>
                     <div style={{ fontWeight: 600, color: COLORS.text }}>
-                      {p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>· {p.category}</span>
+                      {p.name} <span style={{ fontSize: 12, color: COLORS.faint }}>Â· {p.category}</span>
                     </div>
                     <div style={{ fontSize: 11, color: COLORS.faint, marginTop: 2 }}>
                       {t("addedBy")}: {
-                        p.ownerType === "distributor" ? `${t("addedByDistributor")} · ${distributors.find((d) => d.id === p.ownerId)?.name || "?"}`
-                        : p.ownerType === "vendor" ? `${t("addedByVendor")} · ${vendors.find((v) => v.id === p.ownerId)?.shopName || "?"}`
+                        p.ownerType === "distributor" ? `${t("addedByDistributor")} Â· ${distributors.find((d) => d.id === p.ownerId)?.name || "?"}`
+                        : p.ownerType === "vendor" ? `${t("addedByVendor")} Â· ${vendors.find((v) => v.id === p.ownerId)?.shopName || "?"}`
                         : t("addedByAdmin")
                       }
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "4px" }}>
-                      <span style={{ fontSize: 13, color: COLORS.muted }}>₹</span>
+                      <span style={{ fontSize: 13, color: COLORS.muted }}>â‚¹</span>
                       <input type="number" value={p.price} onChange={(e) => updateProductField(p.id, "price", Number(e.target.value) || 0)}
                         style={{ width: 64, padding: "4px 6px", borderRadius: "6px", border: `1px solid #D8D8CC`, fontSize: 13 }} />
                       <select value={p.unit} onChange={(e) => updateProductField(p.id, "unit", e.target.value)} style={{ fontSize: 12, borderRadius: 6, border: `1px solid #D8D8CC`, padding: "3px" }}>
@@ -1690,7 +1690,7 @@ function AdminDashboard({
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8, flexWrap: "wrap" }}>
                       <div>
                         <div style={{ fontWeight: 700, color: COLORS.text }}>{d.name}</div>
-                        <div style={{ fontSize: 12, color: COLORS.muted }}>{d.phone} · {t("yourZone")}: {zone ? zone.name : t("zoneUnassigned")}</div>
+                        <div style={{ fontSize: 12, color: COLORS.muted }}>{d.phone} Â· {t("yourZone")}: {zone ? zone.name : t("zoneUnassigned")}</div>
                       </div>
                       <span style={{
                         fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999,
@@ -1702,18 +1702,18 @@ function AdminDashboard({
                     </div>
 
                     <div style={{ display: "flex", gap: 16, marginTop: 10, fontSize: 12, color: COLORS.muted, flexWrap: "wrap" }}>
-                      <span>{t("totalSales")}: ₹{dSales}</span>
+                      <span>{t("totalSales")}: â‚¹{dSales}</span>
                       <span>{t("totalOrders")}: {dOrders.length}</span>
-                      <span>{d.commissionType === "percent" ? `${d.commissionValue}%` : `₹${d.commissionValue}/${t("orders")}`}</span>
-                      {dProductSales > 0 && <span>{t("mySales")}: ₹{dProductSales}</span>}
+                      <span>{d.commissionType === "percent" ? `${d.commissionValue}%` : `â‚¹${d.commissionValue}/${t("orders")}`}</span>
+                      {dProductSales > 0 && <span>{t("mySales")}: â‚¹{dProductSales}</span>}
                     </div>
                     {cashHeld > 0 && (
-                      <div style={{ fontSize: 11, color: COLORS.faint, marginTop: 4 }}>{t("cashHeldNote")}: ₹{cashHeld} (COD)</div>
+                      <div style={{ fontSize: 11, color: COLORS.faint, marginTop: 4 }}>{t("cashHeldNote")}: â‚¹{cashHeld} (COD)</div>
                     )}
 
                     <div style={{ marginTop: 8, background: due !== 0 ? COLORS.softRed : COLORS.soft, borderRadius: 8, padding: "8px 10px" }}>
                       <div style={{ fontSize: 13, fontWeight: 700, color: due !== 0 ? COLORS.accentRed : COLORS.dark, marginBottom: 8 }}>
-                        {due > 0 ? `${t("youOwe")}: ₹${due}` : due < 0 ? `${t("theyOwe")}: ₹${Math.abs(due)}` : t("settled")}
+                        {due > 0 ? `${t("youOwe")}: â‚¹${due}` : due < 0 ? `${t("theyOwe")}: â‚¹${Math.abs(due)}` : t("settled")}
                       </div>
                       <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                         <input type="number" placeholder={t("enterAmount")} value={payoutInputs["dist_" + d.id] || ""}
@@ -1777,9 +1777,9 @@ function AdminDashboard({
                     <span style={{ fontWeight: 700, color: COLORS.text }}>#{o.id.slice(-5).toUpperCase()}</span>
                     <span style={{ fontSize: 12, color: COLORS.faint }}>{new Date(o.createdAt).toLocaleString(lang === "hi" ? "hi-IN" : "en-IN")}</span>
                   </div>
-                  <div style={{ fontSize: 13, color: COLORS.muted, marginBottom: 6 }}>{o.name} · {zone ? zone.name : "—"}</div>
+                  <div style={{ fontSize: 13, color: COLORS.muted, marginBottom: 6 }}>{o.name} Â· {zone ? zone.name : "â€”"}</div>
                   <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: COLORS.text }}>
-                    <span>{t("total")}: ₹{o.total}{o.deliveryCharge > 0 && <span style={{ color: COLORS.muted, fontSize: 11 }}> ({t("deliveryCharge")}: ₹{o.deliveryCharge})</span>}</span>
+                    <span>{t("total")}: â‚¹{o.total}{o.deliveryCharge > 0 && <span style={{ color: COLORS.muted, fontSize: 11 }}> ({t("deliveryCharge")}: â‚¹{o.deliveryCharge})</span>}</span>
                     <span>{t("paymentMethod")}: {t(o.paymentMethod)}</span>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
@@ -1835,7 +1835,7 @@ function AdminDashboard({
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 8 }}>
                       <div>
                         <div style={{ fontWeight: 700, color: COLORS.text }}>{d.name}</div>
-                        <div style={{ fontSize: 12, color: COLORS.muted }}>{d.phone} · {d.commissionType === "percent" ? `${d.commissionValue}%` : `₹${d.commissionValue}/${t("orders")}`}</div>
+                        <div style={{ fontSize: 12, color: COLORS.muted }}>{d.phone} Â· {d.commissionType === "percent" ? `${d.commissionValue}%` : `â‚¹${d.commissionValue}/${t("orders")}`}</div>
                       </div>
                       <button className="tb-focus" onClick={() => toggleBoyActive(d.id)}
                         style={{ fontSize: 12, fontWeight: 600, padding: "6px 10px", borderRadius: "999px", border: "none", cursor: "pointer", background: d.active ? COLORS.soft : COLORS.softRed, color: d.active ? COLORS.dark : COLORS.accentRed }}>
@@ -1844,11 +1844,11 @@ function AdminDashboard({
                     </div>
                     <div style={{ display: "flex", gap: 16, marginTop: 8, fontSize: 12, color: COLORS.muted, flexWrap: "wrap" }}>
                       <span>{t("totalDelivered")}: {delivered.length}</span>
-                      <span>{t("myEarnings")}: ₹{earned}</span>
-                      <span>{t("paidSoFar")}: ₹{d.paidOut || 0}</span>
+                      <span>{t("myEarnings")}: â‚¹{earned}</span>
+                      <span>{t("paidSoFar")}: â‚¹{d.paidOut || 0}</span>
                     </div>
                     <div style={{ marginTop: 8, background: due > 0 ? COLORS.softRed : COLORS.soft, borderRadius: 8, padding: "8px 10px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
-                      <span style={{ fontSize: 13, fontWeight: 700, color: due > 0 ? COLORS.accentRed : COLORS.dark }}>{t("dueAmount")}: ₹{due}</span>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: due > 0 ? COLORS.accentRed : COLORS.dark }}>{t("dueAmount")}: â‚¹{due}</span>
                       <div style={{ display: "flex", gap: 6 }}>
                         <input type="number" placeholder={t("enterAmount")} value={payoutInputs["boy_" + d.id] || ""}
                           onChange={(e) => setPayoutInputs({ ...payoutInputs, ["boy_" + d.id]: e.target.value })}
@@ -1970,7 +1970,7 @@ function AdminDashboard({
                 {(settings.coupons || []).map((c) => (
                   <div key={c.code} style={{ display: "flex", alignItems: "center", gap: 10, background: COLORS.soft, borderRadius: 8, padding: "8px 12px" }}>
                     <strong style={{ color: COLORS.text }}>{c.code}</strong>
-                    <span style={{ fontSize: 12, color: COLORS.muted }}>{c.type === "percent" ? `${c.value}%` : `₹${c.value}`}</span>
+                    <span style={{ fontSize: 12, color: COLORS.muted }}>{c.type === "percent" ? `${c.value}%` : `â‚¹${c.value}`}</span>
                     <div style={{ flex: 1 }} />
                     <button className="tb-focus" onClick={() => toggleCoupon(c.code)}
                       style={{ fontSize: 11, fontWeight: 600, padding: "4px 8px", borderRadius: 999, border: "none", cursor: "pointer", background: c.active ? "#fff" : COLORS.softRed, color: c.active ? COLORS.dark : COLORS.accentRed }}>
@@ -2001,7 +2001,7 @@ function AdminDashboard({
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
                   <div>
                     <div style={{ fontWeight: 700, color: COLORS.text }}>{v.shopName}</div>
-                    <div style={{ fontSize: 12, color: COLORS.muted }}>{v.ownerName} · {v.phone}</div>
+                    <div style={{ fontSize: 12, color: COLORS.muted }}>{v.ownerName} Â· {v.phone}</div>
                   </div>
                   <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
                     <span style={{
@@ -2026,7 +2026,7 @@ function AdminDashboard({
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: 16, marginTop: 10, fontSize: 12, color: COLORS.muted, flexWrap: "wrap" }}>
-                  <span>{t("mySales")}: ₹{vProductSales}</span>
+                  <span>{t("mySales")}: â‚¹{vProductSales}</span>
                   <span>{t("totalOrders")}: {vOrderCount}</span>
                   <span>{t("products")}: {vProductCount}</span>
                 </div>
@@ -2116,7 +2116,7 @@ function DeliveryDashboard({ deliveryBoy, orders, refreshOrders, onLogout }) {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, padding: "20px 20px 0", maxWidth: 700, margin: "0 auto" }}>
         <div style={{ background: COLORS.dark, color: "#fff", borderRadius: 14, padding: 16 }}>
           <div style={{ fontSize: 12, opacity: 0.8 }}>{t("myEarnings")}</div>
-          <div className="tb-display" style={{ fontSize: 22, fontWeight: 700 }}>₹{totalEarning}</div>
+          <div className="tb-display" style={{ fontSize: 22, fontWeight: 700 }}>â‚¹{totalEarning}</div>
         </div>
         <div style={{ background: "#fff", border: `1px solid ${COLORS.border}`, borderRadius: 14, padding: 16 }}>
           <div style={{ fontSize: 12, color: COLORS.muted }}>{t("totalDelivered")}</div>
@@ -2140,11 +2140,11 @@ function DeliveryDashboard({ deliveryBoy, orders, refreshOrders, onLogout }) {
                   color: o.deliveryStatus === "delivered" ? COLORS.dark : o.deliveryStatus === "out_for_delivery" ? "#8A5A00" : "#2A5885",
                 }}>{t(o.deliveryStatus)}</span>
               </div>
-              <div style={{ fontSize: 14, color: COLORS.text }}>{o.name} · {o.phone}</div>
+              <div style={{ fontSize: 14, color: COLORS.text }}>{o.name} Â· {o.phone}</div>
               <div style={{ fontSize: 13, color: COLORS.muted, marginBottom: 8 }}>{o.address}</div>
               <MapLink address={o.address} lat={o.lat} lng={o.lng} />
               <div style={{ display: "flex", justifyContent: "space-between", fontWeight: 700, marginTop: 8, color: COLORS.text }}>
-                <span>{t("total")}</span><span>₹{o.total}</span>
+                <span>{t("total")}</span><span>â‚¹{o.total}</span>
               </div>
               <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
                 {o.deliveryStatus === "assigned" && (
@@ -2187,7 +2187,7 @@ class ErrorBoundary extends React.Component {
       return (
         <div style={{ minHeight: "100vh", background: "#F5F6F0", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, fontFamily: "sans-serif" }}>
           <div style={{ background: "#fff", border: "1px solid #E4E4D8", borderRadius: 14, padding: 22, maxWidth: 480 }}>
-            <div style={{ fontWeight: 700, color: "#D64550", marginBottom: 8, fontSize: 16 }}>कुछ गड़बड़ हो गई / Something went wrong</div>
+            <div style={{ fontWeight: 700, color: "#D64550", marginBottom: 8, fontSize: 16 }}>à¤•à¥à¤› à¤—à¤¡à¤¼à¤¬à¤¡à¤¼ à¤¹à¥‹ à¤—à¤ˆ / Something went wrong</div>
             <div style={{ fontSize: 13, color: "#1E2A22", whiteSpace: "pre-wrap", wordBreak: "break-word" }}>
               {String((this.state.error && this.state.error.message) || this.state.error)}
             </div>
